@@ -35,16 +35,6 @@
 			path = PurgePoint;
 			sourceTree = "<group>";
 		};
-		69BE49992E43C78C000692EA /* PurgePointTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = PurgePointTests;
-			sourceTree = "<group>";
-		};
-		69BE49A32E43C78C000692EA /* PurgePointUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = PurgePointUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +66,6 @@
 			isa = PBXGroup;
 			children = (
 				69BE498A2E43C787000692EA /* PurgePoint */,
-				69BE49992E43C78C000692EA /* PurgePointTests */,
-				69BE49A32E43C78C000692EA /* PurgePointUITests */,
 				69BE49892E43C787000692EA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -130,9 +118,6 @@
 			dependencies = (
 				69BE49982E43C78C000692EA /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				69BE49992E43C78C000692EA /* PurgePointTests */,
-			);
 			name = PurgePointTests;
 			packageProductDependencies = (
 			);
@@ -152,9 +137,6 @@
 			);
 			dependencies = (
 				69BE49A22E43C78C000692EA /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				69BE49A32E43C78C000692EA /* PurgePointUITests */,
 			);
 			name = PurgePointUITests;
 			packageProductDependencies = (
@@ -402,11 +384,13 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = wetsadtearstudios.PurgePoint;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -429,11 +413,13 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = wetsadtearstudios.PurgePoint;
 				PRODUCT_NAME = "$(TARGET_NAME)";

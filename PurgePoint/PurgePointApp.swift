@@ -1,17 +1,20 @@
-//
-//  PurgePointApp.swift
-//  PurgePoint
-//
-//  Created by Trevor  on 2025-08-06.
-//
-
 import SwiftUI
 
 @main
 struct PurgePointApp: App {
+    @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+        Settings {
+            EmptyView() // No UI
         }
+    }
+}
+
+class AppDelegate: NSObject, NSApplicationDelegate {
+    var menuBarController: MenuBarController?
+
+    func applicationDidFinishLaunching(_ notification: Notification) {
+        menuBarController = MenuBarController()
     }
 }
